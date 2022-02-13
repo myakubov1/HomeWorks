@@ -17,7 +17,7 @@ namespace HomeWorks.MorseTranslator
         //}
     }
 
-    class MorseToRu : ITranslate
+    class MorseToEng : ITranslate
     {
         public char[] Alphabet { get; set; }
         public string[] Codes { get; set; }
@@ -29,13 +29,14 @@ namespace HomeWorks.MorseTranslator
            
         }
     }
-    class RuToMorse : ITranslate
+    class EngToMorse : ITranslate
     {
         public char[] Alphabet { get; set; }
         public string[] Codes { get; set; }
         public void Translate()
         {
-
+            Alphabet[0] = 'x';
+            Codes[0] = "X";
         }
     }
 
