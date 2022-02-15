@@ -8,13 +8,7 @@ namespace HomeWorks.MorseTranslator
 {
     class Morse
     {
-        //public Morse()
-        //{
-        //    ITranslate MtR = new MorseToRu();
-        //    MtR.Alphabet = new char[] { 'А' };
-        //    MtR.Codes = new string[] { "*–" };
-        //    MtR.Translate();
-        //}
+ 
     }
 
     class MorseToRu : ITranslate
