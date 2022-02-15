@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeWorks.HouseBuilder
 {
-    class House
+    public class House
     {
-        internal House()
-        {
-            int countParts = 11;
-            IPart[] mansionParts = new IPart[countParts];
-        }
-
+        
     }
 
     class Basement : IPart

@@ -6,20 +6,12 @@ using System.Threading.Tasks;
 
 namespace HomeWorks.HouseBuilder
 {
-    class Team
+    class StartBuild
     {
-      
-    }
-    class Worker : IWorker
-    {
-
-    }
-    class TeamLeader : IWorker
-    {
-
-    }
-    interface IWorker
-    {
-
+        
+        void Start ()
+        {
+            
+        }
     }
 }

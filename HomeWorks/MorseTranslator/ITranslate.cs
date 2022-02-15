@@ -10,6 +10,11 @@ namespace HomeWorks.MorseTranslator
     {
         char[] Alphabet { get; set; }
         string[] Codes { get; set; }
-        void Translate();
+        string Input { get; set; }
+        string Output { get; set; }
+        void Translate(string pResult)
+        {
+            this.Output = pResult;
+        }
     }
 }
