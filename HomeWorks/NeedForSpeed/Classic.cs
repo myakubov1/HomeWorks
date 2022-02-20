@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWorks.HouseBuilder
+namespace HomeWorks.NeedForSpeed
 {
-    class StartBuild
+    class Classic : Car
     {
-        
-        void Start ()
+        public override void Move()
         {
-            
+
+
         }
     }
 }
