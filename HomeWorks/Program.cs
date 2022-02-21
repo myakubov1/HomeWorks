@@ -5,6 +5,7 @@ using HomeWorks.HouseBuilder;
 using System.IO;
 using System.Text;
 using static HomeWorks.HouseBuilder.StartBulding;
+using static HomeWorks.NeedForSpeed.Race;
 namespace HomeWorks
 {
     class Program
@@ -24,7 +25,15 @@ namespace HomeWorks
             //var outp2 = MtR.Translate(Console.ReadLine());
             //Console.WriteLine(outp2);
 
-            Start();
+            //Start();
+
+
+            while (true)
+            {
+                StartRace();
+                 
+            }
+           
         }
 
 
