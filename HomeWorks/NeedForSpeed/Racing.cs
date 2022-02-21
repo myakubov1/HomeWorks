@@ -28,9 +28,9 @@ namespace HomeWorks.NeedForSpeed
             Distance += DpT;
 
             Console.WriteLine($"{Name}: {Distance}");
-            if (Distance >= 100)
+            if (Distance >= 1000)
             {
-                Finish("Приехали");
+                Finish();
             }
         }
     }

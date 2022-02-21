@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeWorks.NeedForSpeed
 {
-    public delegate void CarEvent(string Message);
+    public delegate void CarEvent();
 
-    abstract class Car
+    public abstract class Car
     {
         public string Name { get; set; }
         public int MaxSpeed { get; set; }
@@ -17,5 +17,6 @@ namespace HomeWorks.NeedForSpeed
         public event CarEvent Finish;
        
         public abstract void Move();
+
     }
 }

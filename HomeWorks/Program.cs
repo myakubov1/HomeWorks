@@ -28,10 +28,10 @@ namespace HomeWorks
             //Start();
 
 
-            while (true)
+            while (EndRace != true)
             {
                 StartRace();
-                 
+               
             }
            
         }
