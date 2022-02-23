@@ -10,6 +10,7 @@ namespace HomeWorks.NeedForSpeed
 
     public abstract class Car
     {
+        public static bool EndRace { get; set; }
         public string Name { get; set; }
         public int MaxSpeed { get; set; }
         public int Distance { get; set; }

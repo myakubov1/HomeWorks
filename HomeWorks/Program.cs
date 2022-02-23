@@ -6,6 +6,8 @@ using System.IO;
 using System.Text;
 using static HomeWorks.HouseBuilder.StartBulding;
 using static HomeWorks.NeedForSpeed.Race;
+using System.Collections.Generic;
+
 namespace HomeWorks
 {
     class Program
@@ -28,15 +30,33 @@ namespace HomeWorks
             //Start();
 
 
-            while (EndRace != true)
-            {
+
+                Console.WriteLine("--------------------");
                 StartRace();
-               
-            }
-           
+
+            //List<string> stringArray = new List<string>();
+            //string inputedString = "";
+            //while ((inputedString = Console.ReadLine()) != "")
+            //{
+
+            //    stringArray.Add(inputedString);
+
+            //}
+            //foreach (string s in stringArray)
+            //{
+            //    Console.WriteLine(s);
+            //}
+            //stringArray.Clear();
+
+            //List<string> list = new List<string>();
+            //list.Add("1");
+            //list.Add("2");
+
+            //foreach (string i in list)
+            //{
+            //    Console.WriteLine(i);
+            //}
         }
-
-
 
 
     }

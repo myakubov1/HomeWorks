@@ -19,6 +19,10 @@ namespace HomeWorks.NeedForSpeed
             this.Name = "Школьный автобус";
             this.MaxSpeed = maxSpeed;
         }
+        public void ShowM()
+        {
+            Console.WriteLine($"Победитель {Name}");
+        }
         public override void Move()
         {
             Random = new Random();
@@ -29,7 +33,8 @@ namespace HomeWorks.NeedForSpeed
             if (Distance>= 1000)
             {
                 Finish();
-                
+                EndRace = true;
+
             }
         }
     }

@@ -16,7 +16,7 @@ namespace HomeWorks.Books
         public static void StartLibrary()
         {
 
-            List<Book> books = new List<Book>();
+            List<Book> books = new();
 
             while (true)
             {
@@ -30,7 +30,7 @@ namespace HomeWorks.Books
                 {
                     case "add":
 
-                        Book ex1 = new Book();
+                        Book ex1 = new();
                         Console.Write("Введите автора книги: ");
                         ex1.Author = Console.ReadLine();
                         Console.Write("Введите название книги: ");

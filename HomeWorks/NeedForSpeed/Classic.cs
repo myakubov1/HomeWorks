@@ -19,6 +19,10 @@ namespace HomeWorks.NeedForSpeed
             this.Name = "Camry 3.5";
             this.MaxSpeed = maxSpeed;
         }
+        public void ShowM()
+        {
+            Console.WriteLine($"Победитель {Name}");
+        }
         public override void Move()
         {
             Random = new Random();
@@ -29,6 +33,7 @@ namespace HomeWorks.NeedForSpeed
             if (Distance >= 1000)
             {
                 Finish();
+                EndRace = true;
             }
         }
     }

@@ -20,6 +20,10 @@ namespace HomeWorks.NeedForSpeed
             this.Name = "Гоночный болид";
             this.MaxSpeed = maxSpeed;
         }
+        public void ShowM()
+        {
+            Console.WriteLine($"Победитель {Name}");
+        }
         public override void Move()
         {
 
@@ -30,7 +34,9 @@ namespace HomeWorks.NeedForSpeed
             Console.WriteLine($"{Name}: {Distance}");
             if (Distance >= 1000)
             {
+
                 Finish();
+                EndRace = true;
             }
         }
     }

@@ -10,28 +10,26 @@ namespace HomeWorks.NeedForSpeed
     {
         public static Bus Bus = new Bus(40);
         public static Cargo Cargo = new Cargo(50);
-        public static Classic Classic = new Classic(90);
-        public static Racing Racing = new Racing(140);
-        public static bool EndRace { get; set; }
+        public static Classic Classic = new Classic(300);
+        public static Racing Racing = new Racing(300);
+        
         public static void StartRace()
         {
-            Bus.Finish += () => AllOver(Bus.Name);
-            Cargo.Finish += () => AllOver(Cargo.Name);
-            Classic.Finish += () => AllOver(Classic.Name);
-            Racing.Finish += () => AllOver(Racing.Name);
-
-            Bus.Move();
-            Cargo.Move();
-            Classic.Move();
-            Racing.Move();
+            Bus.Finish += Bus.ShowM;
+            Racing.Finish += Racing.ShowM;
+            Classic.Finish +=Classic.ShowM;
+            Cargo.Finish += Cargo.ShowM;
 
 
-        }
+            while (Car.EndRace != true)
+            {
 
-        public static void AllOver(string carName)
-        {
-            Console.WriteLine($"Все, приехали! Победитель {carName}");
-            EndRace = true;
+                Bus.Move();
+                Cargo.Move();
+                Classic.Move();
+                Racing.Move();
+            }
+           
         }
     }
 }
