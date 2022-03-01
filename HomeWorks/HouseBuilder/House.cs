@@ -8,56 +8,94 @@ namespace HomeWorks.HouseBuilder
 {
     public class House
     {
-        public House(IPart[] parts)
+        public List<IPart> HouseProject { get; set; }
+        public House(List<IPart> houseProject)
         {
-            
+            this.HouseProject = houseProject;
         }
     }
 
-    static class HouseProject
+    public static class HouseProject
     {
-        public static IPart Basement { get; set; }
-        public static IPart Wall1 { get; set; }
-        public static IPart Wall2 { get; set; }
-        public static IPart Wall3 { get; set; }
-        public static IPart Wall4 { get; set; }
-        public static IPart Window1 { get; set; }
-        public static IPart Window2 { get; set; }
-        public static IPart Window3 { get; set; }
-        public static IPart Window4 { get; set; }
-        public static IPart Door { get; set; }
-        public static IPart Roof { get; set; }
 
-        public static IPart[] houseProject = new IPart[] { Basement, Wall1, Wall2, Wall3, Wall4, Window1, Window2, Window3, Window4, Door, Roof };
+        public static List<IPart> parts = new List<IPart>
+        {
+            new Basement(),
+            new Walls(),
+            new Walls(),
+            new Walls(),
+            new Walls(),
+            new Window(),
+            new Window(),
+            new Window(),
+            new Window(),
+            new Door(),
+            new Roof()
+        };
     }
 
-    class Basement : IPart
+
+
+    public class Basement : IPart
     {
-        
+        public Basement()
+        {
+            Completed = false;
+            CurrentPart = "Фундамент";
+        }
+        public string CurrentPart { get; set; }
+        public bool Completed { get; set; }
     }
 
-    class Walls : IPart
+    public class Walls : IPart
     {
-       
+        public Walls()
+        {
+            Completed = false;
+            CurrentPart = "Стена";
+        }
+        public string CurrentPart { get; set; }
+        public bool Completed { get; set; }
     }
 
-    class Door : IPart
+    public class Door : IPart
     {
-        
+        public Door()
+        {
+            Completed = false;
+            CurrentPart = "Дверь";
+        }
+        public string CurrentPart { get; set; }
+        public bool Completed { get; set; }
     }
 
-    class Window : IPart
+    public class Window : IPart
     {
-     
+        public Window()
+        {
+            Completed = false;
+            CurrentPart = "Окно";
+        }
+        public string CurrentPart { get; set; }
+        public bool Completed { get; set; }
     }
 
-    class Roof : IPart
+    public class Roof : IPart
     {
-       
+        public Roof()
+        {
+            Completed = false;
+            CurrentPart = "Крыша";
+        }
+        public string CurrentPart { get; set; }
+        public bool Completed { get; set; }
+
     }
 
     public interface IPart
     {
-        
+        public string CurrentPart { get; set; }
+        public bool Completed { get; set; }
+
     }
 }

@@ -7,11 +7,12 @@ using static HomeWorks.HouseBuilder.HouseProject;
 
 namespace HomeWorks.HouseBuilder
 {
-    static class StartBulding
+    class StartBulding
     {
         static public void Start()
         {
-            House mansion = new House(houseProject);
+
+            House mansion = new House(parts);
             Team.Build(mansion);
         }
 

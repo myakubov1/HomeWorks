@@ -17,28 +17,36 @@ namespace HomeWorks.HouseBuilder
 
         public static IWorker[] team = new IWorker[] { TeamLeader, Worker1, Worker2, Worker3, Worker4 };
 
+        public static bool BuildEnd { get; set; }
         static public void Build(House house)
         {
+            while (BuildEnd != true)
+            {
+                //foreach (var c in house)
+                //{
+
+                //}
+            }
 
         }
     }
     class Worker : IWorker
     {
-        public void Build()
+        public void Work()
         {
 
         }
     }
     class TeamLeader : IWorker
     {
-        public void Build()
+        public void Work()
         {
 
         }
     }
     interface IWorker
     {
-        public void Build()
+        public void Work()
         {
 
         }
